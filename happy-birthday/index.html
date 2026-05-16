@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>生日快樂</title>
+    <title>お誕生日おめでとう 超眠人</title>
     <style>
       * {
         box-sizing: border-box;
@@ -14,7 +14,7 @@
       body {
         min-height: 100vh;
         overflow: hidden;
-        font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+        font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Sans", system-ui, sans-serif;
         color: #fff;
         background:
           radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.35), transparent 24%),
@@ -268,14 +268,16 @@
       <div class="balloon"></div>
 
       <section class="card">
-        <div class="badge">🎉 Special Day 🎉</div>
+        <div class="badge">🎉 特別な一日 🎉</div>
         <div class="cake">
           <div class="candle"></div>
           <div class="flame"></div>
         </div>
-        <h1>生日快樂</h1>
-        <p class="message">願今天的你被溫柔、驚喜和滿滿祝福包圍。新的一歲，平安順心、閃閃發光，所有期待都慢慢實現。</p>
-        <button id="wishButton">送出祝福 ✨</button>
+        <h1>お誕生日おめでとう</h1>
+        <p class="message">
+          素敵な一年になりますように。今日という特別な日が、たくさんの笑顔と幸せに包まれますよう心から願っています。
+        </p>
+        <button id="wishButton">お祝いを届ける ✨</button>
       </section>
     </main>
 
@@ -316,9 +318,9 @@
       button.addEventListener("click", (event) => {
         createConfetti(100);
         createFirework(event.clientX, event.clientY);
-        button.textContent = "祝福已送達 💖";
+        button.textContent = "お祝いが届きました 💖";
         setTimeout(() => {
-          button.textContent = "再送一次祝福 ✨";
+          button.textContent = "もう一度お祝いを届ける ✨";
         }, 1600);
       });
 
